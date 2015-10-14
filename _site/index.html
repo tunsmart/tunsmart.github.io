@@ -14,9 +14,30 @@
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$("#countdown").countdown({
+				date: "9 december 2015 11:59:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+				format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
+			},
+
+			function() {
+
+				// the code here will run when the countdown ends
+				alert("done!")
+
+			});
+		});
+	</script>
+
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lateef' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
@@ -46,7 +67,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Codes Without Borders</a>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-family: 'Lateef', cursive;">CodesWithoutBorders</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,14 +95,30 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Welcome, we will launch soon!</h1>
+                <h1>Welcome, we launch in</h1>
+                <ul id="countdown">
+		<li>
+			<span class="days">00</span>
+			<p class="timeRefDays">days</p>
+		</li>
+		<li>
+			<span class="hours">00</span>
+			<p class="timeRefHours">hours</p>
+		</li>
+		<li>
+			<span class="minutes">00</span>
+			<p class="timeRefMinutes">minutes</p>
+		</li>
+		<li>
+			<span class="seconds">00</span>
+			<p class="timeRefSeconds">seconds</p>
+		</li>
+	</ul>
                 <hr>
-                <p></p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
-    </header>
-
+      </header>
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -89,7 +126,7 @@
                     <h2 class="section-heading">We believe there are no boundaries!</h2>
                     <hr class="light">
                     <p class="text-faded">At Codes without Borders, we are fully commited to raising Nigeria's next generation of Programmers. We believe in the unalienable right of access of the Nigerian Child to, at least, basic useful Computer Science education, because we know as a matter of fact, that no matter their eventual chosen career, Computers and technology will play a central role.</p>
-                    <a href="#" class="btn btn-default btn-xl">DONATE!</a>
+                <!--    <a href="#" class="btn btn-default btn-xl">DONATE!</a> -->
                 </div>
             </div>
         </div>
@@ -121,94 +158,13 @@
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
@@ -217,8 +173,9 @@
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+                <h2>Teach a Child!</h2>
+                <p class="text-muted">This December, spend an hour with a public School Child, tutoring them in the <a href="https://hourofcode.com/" target="_blank">Hour of Code</a>, it doesn't matter whether you can find your way around a Computer or not, all that is required of you is either your Laptop, Tablet or Smart Phone. Together let's start building this <a href="http://www.theguardian.com/technology/2014/may/12/silicon-valley-geeks-coders-programmers" target="_blank">Army</a>, You will have fun, we promise. </p>
+                <a href="http://eepurl.com/bCj73r" class="btn btn-default btn-xl wow tada">Volunteer Now!</a>
             </div>
         </div>
     </aside>
