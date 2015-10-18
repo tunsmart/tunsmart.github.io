@@ -1,2 +1,8 @@
 sitename: Codes without Borders
+title: "Codes without Borders"
+description: "Building The Next Generation Of Nigerian Coders!"
+url: "http://codeswithoutborders.org"
 baseurl: ''
+
+gems:
+  - jekyll-sitemap
