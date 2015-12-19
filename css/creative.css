@@ -195,9 +195,8 @@ header .header-content {
 }
 
 header .header-content .header-content-inner h1 {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 30px;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 2em;
 }
