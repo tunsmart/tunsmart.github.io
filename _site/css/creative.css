@@ -120,20 +120,8 @@ aside {
     background-color: transparent;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: #{{ site.color.primary }};
-    background-color: #{{ site.color.primary }};
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-
-
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
-        border: 0;
         border-color: transparent;
         background-color: transparent;
     }
@@ -179,7 +167,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        border-radius: 3px;
+
         color: #f05f40;
     }
 }
