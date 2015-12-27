@@ -178,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/hoc1.jpg);
+    background-image: url(../img/blurred.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -199,7 +199,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 30px;
     font-weight: 700;
     font-size: 2em;
-    color: #fffbff;
+    color: #fff;
 }
 
 header .header-content .header-content-inner hr {
